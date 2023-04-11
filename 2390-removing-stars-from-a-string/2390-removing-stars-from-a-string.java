@@ -17,12 +17,12 @@ class Solution {
             else
             dq.addLast(s.charAt(i));
         }
-        StringBuilder a = new StringBuilder();
+        String s1 = "";
         while(!dq.isEmpty())
         {
-            a.append(dq.pollFirst());
+            s1= s1+ dq.pollFirst().toString();
         }
         
-       return a.toString(); 
+       return s1; 
     }
 }
