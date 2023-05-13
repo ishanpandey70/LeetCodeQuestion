@@ -50,9 +50,9 @@ class Solution {
         
         //Else
         boolean ansReceived = false;
-        for(int i = 1 ; i<= 9 ; i++)
+        for(char i = '1' ; i<= '9' ; i++)
         {
-            board[x][y]= Character.forDigit(i, 10);
+            board[x][y]= i;
             if(check(x,y,board) )
             {
                int [] arr1 = nextFreePoint(x,y,board);
