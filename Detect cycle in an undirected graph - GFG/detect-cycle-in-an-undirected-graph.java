@@ -47,7 +47,7 @@ class Solution {
         // Code here
         //using BFS
         
-        boolean visited[] = new boolean [V+1];
+        boolean visited[] = new boolean [V];
         Queue <Node> q = new LinkedList<>();
         boolean ans = false;
         for(int i =0;  i< V; i++)
