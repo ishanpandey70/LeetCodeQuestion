@@ -54,6 +54,11 @@ class Solution {
         {
             if(!visited[i]){
               ans = ans || BFS(i,-1,V,adj, visited,q);
+              if(ans == true)
+              {
+                  return true;
+              }
+              
             }
         }
         return ans;
